@@ -3,8 +3,8 @@ import java.awt.image.BufferStrategy;
 
 public class Game extends Canvas implements Runnable
 {
-
     private static final long SerialVersionUID = 2L;
+
     private Thread thread;
     private boolean running = false;
 
