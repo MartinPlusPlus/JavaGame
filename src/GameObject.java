@@ -2,7 +2,8 @@ import java.awt.*;
 
 public abstract class GameObject
 {
-    protected int x, int y;
+    protected int x;
+    protected int y;
     protected ID id;
     protected int velX, velY;
 
@@ -10,7 +11,7 @@ public abstract class GameObject
     {
         this.x = x;
         this.y = y;
-        this.id = ID;
+        this.id = id;
     }
 
     public abstract void tick();
@@ -26,10 +27,12 @@ public abstract class GameObject
     }
 
     public int getX()
+
     {
         return x;
     }
     public int getY()
+
     {
         return y;
     }
@@ -37,5 +40,27 @@ public abstract class GameObject
     public void setID(ID id)
     {
         this.id = id;
+    }
+    public ID getID()
+    {
+        return id;
+    }
+
+    public void setVelX(int velX)
+    {
+        this.velX = velX;
+    }
+    public void setVelY(int velY)
+    {
+        this.velY = velY;
+    }
+
+    public int getVelX()
+    {
+        return velX;
+    }
+    public int getVelY()
+    {
+        return velY;
     }
 }
